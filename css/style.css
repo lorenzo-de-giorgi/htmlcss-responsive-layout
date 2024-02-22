@@ -41,6 +41,14 @@ img{
     padding: 20px;
 }
 
+.padding-top-50{
+    padding-top: 50px;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
 .small-rounded{
     border-radius: 20px;
 }
@@ -60,6 +68,10 @@ img{
 
 .text-gray{
     color: var(--color-box-text);
+}
+
+.text-white{
+    color: var(--color-odd-bg);
 }
 
 /* bg-color */
@@ -133,7 +145,7 @@ h3{
     margin: 20px 0;
 }
 
-.icon{
+.fa-solid{
     font-size: 3em;
 }
 
@@ -144,6 +156,36 @@ h3{
 
 #features .container>.card{
     padding-bottom: 0;
+}
+
+.features-p{
+    margin-bottom: 40px;
+}
+
+.btn{
+    background-color: var(--color-header);
+    padding: 10px 42px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* planning section */
+.section-title{
+    padding-top: 30px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.white-card{
+    background-color: var(--color-odd-bg);
+    width: 50%;
+}
+
+.planning-arrow{
+    font-size: 2.4em;
+    background-color: var(--color-even-bg);
+    padding: 3px 7px;
 }
 
 /* footer */
