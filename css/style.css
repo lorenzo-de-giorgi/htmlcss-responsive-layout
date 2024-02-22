@@ -304,10 +304,22 @@ h1{
     font-size: 50px;
 }
 
+.call-to-action-btn{
+    color: var(--color-even-bg);
+    padding: 10px 20px;
+    background-color: var(--color-odd-bg);
+    border-radius: 15px;
+}
+
 /* footer */
 footer{
     background-color: var(--color-footer-bg);
     color: var(--color-odd-bg);
+}
+
+.footer-a{
+    text-decoration: underline;
+    color: var(--color-even-bg);
 }
 
 /* media query */
