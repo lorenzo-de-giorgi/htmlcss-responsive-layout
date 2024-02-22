@@ -18,6 +18,11 @@ a{
     text-decoration: none;
     color: var(--color-odd-bg);
 }
+
+img{
+    width: 100%;
+    display: block;
+}
 /* colors */
 :root {
 	--color-header: #0084fd;
@@ -29,11 +34,45 @@ a{
     --color-box-text: #586c7d;
 }
 
-.debug{
-    border: 1px solid red;
+/* utility */
+.container{
+    max-width: 728px;
+    margin: 0 auto;
+    padding: 20px;
 }
-.debug-section{
-    border: 1px solid black;
+
+.small-rounded{
+    border-radius: 20px;
+}
+
+.big-rounded{
+    border-radius: 40px;
+}
+
+.text-center{
+    text-align: center;
+}
+/* text color */
+
+.text-blue{
+    color: var(--color-header);
+}
+
+.text-gray{
+    color: var(--color-box-text);
+}
+
+/* bg-color */
+.even{
+    background-color: var(--color-even-bg);
+}
+
+.odd{
+    background-color: var(--color-odd-bg);
+}
+
+.bg-light{
+    background-color: var(--color-contrast);
 }
 /* header */
 header{
@@ -75,43 +114,36 @@ nav{
 main{
     padding-top: 70px;
 }
+section{
+    scroll-margin-top: 75px;
+}
 
 
-/* description section */
-.card-title{
-    color: var(--color-header);
-    text-align: center;
-    font-size: 27px;
-}
-.card-paragraph{
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--color-box-text);
-}
-.description .card{
-    height: auto;
+/* features section */
+.card{
     padding: 20px;
-    width: 100%;
-    border-radius: 8px;
-    background-color: var(--color-contrast);
-}
-.description .card img{
-    width: 50%;
+    margin-bottom: 20px;
 }
 
-/* utility */
-.container{
-    max-width: 728px;
+p{
+    line-height: 1.8;
+}
+
+h3{
+    margin: 20px 0;
+}
+
+.icon{
+    font-size: 3em;
+}
+
+.img-content{
+    width: 80%;
     margin: 0 auto;
-    padding: 20px;
 }
 
-/* bg-color */
-.even{
-    background-color: var(--color-even-bg);
-}
-.odd{
-    background-color: var(--color-odd-bg);
+#features .container>.card{
+    padding-bottom: 0;
 }
 
 /* footer */
@@ -121,6 +153,7 @@ footer{
 }
 
 /* media query */
+
 /* tablet */
 @media screen and (min-width: 768px){
 
@@ -130,9 +163,11 @@ footer{
     .container{
         max-width: 1200px;
     }
+
     header nav:hover ul{
         display: flex;
     }
+
     header nav ul{
         position: static;
         display: flex;
@@ -140,7 +175,23 @@ footer{
         align-items: center;
         width: 100%;
     }
+
     i.fa-solid.fa-bars{
         display: none;
+    }
+
+    #features .container>.card{
+        display: flex;
+    }
+
+    .text-content{
+        width: 60%;
+    }
+
+    .img-content{
+        width: 40%;
+    }
+    .img-content img{
+        width: 60%;
     }
 }
