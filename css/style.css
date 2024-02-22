@@ -34,19 +34,6 @@ img{
     --color-box-text: #586c7d;
 }
 
-/* flex utility */
-.d-flex{
-    display: flex;
-}
-
-.justify-center{
-    justify-content: center;
-}
-
-.align-center{
-    align-items: center;
-}
-
 /* utility */
 
 .margin-auto{
@@ -330,10 +317,6 @@ footer{
         display: flex;
     }
 
-    .flex-column{
-        flex-direction: column;
-    }
-
     .flex-wrap{
         flex-wrap: wrap;
     }
@@ -354,6 +337,10 @@ footer{
         width: 100%;
     }
 
+    .name{
+        font-size: 15px;
+    }
+
     .white-card{
         width: calc(100% / 2 - 30px);
     }
@@ -372,6 +359,7 @@ footer{
 }
 /* desktop */
 @media screen and (min-width: 992px) {
+
     .container{
         max-width: 1200px;
     }
@@ -392,10 +380,6 @@ footer{
         display: none;
     }
 
-    #features .container>.card{
-        display: flex;
-    }
-
     .text-content{
         width: 60%;
     }
@@ -405,5 +389,23 @@ footer{
     }
     .img-content img{
         width: 60%;
+    }
+
+    /* planning */
+    .planning-text{
+        width: 40%;
+    }
+
+    .float-left{
+        float: left;
+    }
+
+    .margin-auto{
+        margin-right: 40px;
+    }
+    /* benefits */
+
+    .white-card{
+        width: calc(100% / 4 - 30px);
     }
 }
