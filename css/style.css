@@ -5,6 +5,19 @@
     box-sizing: border-box;
     font-family: "PT Sans", sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-odd-bg);
+}
 /* colors */
 :root {
 	--color-header: #0084fd;
@@ -13,6 +26,7 @@
 	--color-contrast: #b5ddff;
 	--color-footer-bg: #333333;
 	--color-color-h1: #fdc15f;
+    --color-box-text: #586c7d;
 }
 
 .debug{
@@ -21,16 +35,75 @@
 .debug-section{
     border: 1px solid black;
 }
+/* header */
+header{
+    background-color: var(--color-header);
+    color: var(--color-odd-bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: var(--color-header);
+    display: none;
+}
+header nav:hover ul{
+    display: block;
+}
+header nav{
+    position: relative;
+}
+header nav a{
+    display: block;
+    padding: 5px 10px;
+}
 /* navbar */
 nav{
     background-color: var(--color-header);
-    padding: 10px;
+}
+
+/* main */
+main{
+    padding-top: 70px;
+}
+
+
+/* description section */
+.card-title{
+    color: var(--color-header);
+    text-align: center;
+    font-size: 27px;
+}
+.card-paragraph{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-box-text);
+}
+.description .card{
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--color-contrast);
+}
+.description .card img{
+    width: 50%;
 }
 
 /* utility */
 .container{
     max-width: 728px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 /* bg-color */
@@ -54,5 +127,20 @@ footer{
 }
 /* desktop */
 @media screen and (min-width: 992px) {
-    
+    .container{
+        max-width: 1200px;
+    }
+    header nav:hover ul{
+        display: flex;
+    }
+    header nav ul{
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+    }
+    i.fa-solid.fa-bars{
+        display: none;
+    }
 }
