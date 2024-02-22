@@ -48,6 +48,19 @@ img{
 }
 
 /* utility */
+
+.margin-auto{
+    margin: auto;
+}
+
+.padding-20{
+    padding: 20px;
+}
+
+.margin-bottom-30{
+    margin-bottom: 30px;
+}
+
 .container{
     max-width: 728px;
     margin: 0 auto;
@@ -198,6 +211,7 @@ h3{
 .white-card{
     background-color: var(--color-odd-bg);
     width: 50%;
+    margin: auto;
 }
 
 .planning-arrow{
@@ -233,6 +247,47 @@ h3{
 }
 .testimonial-i{
     font-size: 25px
+}
+
+/* benefits section */
+.benefits-card{
+    padding: 18px 18px;
+    margin-bottom: 30px;
+}
+.btn-benefits{
+    background-color: var(--color-even-bg);
+    color: var(--color-odd-bg);
+    padding: 6px 12px;
+}
+
+.h2-benefits{
+    font-size: 35px;
+}
+.h3-benefits{
+    font-size: 25px;
+}
+
+/* about-us section */
+.about-us-h2{
+    color: var(--color-even-bg);
+    font-size: 30px;
+}
+.about-us-p{
+    margin-top: 30px;
+}
+
+.linkedin-btn{
+    padding: 6px 12px;
+    color: var(--color-odd-bg);
+    background-color: var(--color-even-bg);
+    border-radius: 12px;
+}
+
+.about-us-h4{
+    font-size: 30px;
+    color: var(--color-even-bg);
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* footer */
