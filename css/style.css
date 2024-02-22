@@ -290,6 +290,20 @@ h3{
     margin-bottom: 40px;
 }
 
+/* call-to-action */
+.call-to-action-span{
+    color: var(--color-box-text);
+}
+
+.call-to-action-h5{
+    font-size: 35px;
+}
+
+h1{
+    color: var(--color-color-h1);
+    font-size: 50px;
+}
+
 /* footer */
 footer{
     background-color: var(--color-footer-bg);
